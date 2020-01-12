@@ -1,0 +1,52 @@
+.carsItem {
+    border: 1px solid black;
+    height: 24.5rem;
+    width: calc(100vw - 28rem);
+    display: flex;
+    margin-bottom: 2rem;
+
+    &-image {
+        background-image: url('img/porsche.png');
+        width: 43.5rem;
+    }
+
+    &-data1 {
+        margin-left: 2rem;
+
+        &--title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        &--text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &-data2 {
+        margin-left: 12rem;
+        margin-top: 6rem;
+    }
+
+    &-price {
+        margin-left: 15rem;
+
+        &--brut {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            
+            margin-top: 16rem;
+        }
+
+        &--net{
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.news-container {
+    width: calc(100vw - 14rem);
+    display: flex;
+}
+
+.news-image {
+    width: 90.3rem;
+    height: 59.8rem;
+    background-image: url('img/merc-c63.png');
+    margin-right: 6.5rem;
+}
+
+.news-info {
+    font-family: 'Roboto', sans-serif;
+
+    &--title {
+        font-weight: 700;
+        font-size: 3.3rem;
+        margin-bottom: 3.6rem;
+    }
+
+    &--text {
+        max-width: 69rem;
+        font-size: 1.6rem;
+
+        margin-bottom: 3rem;
+    }
+
+    &--data {
+        font-size: 2rem;
+        font-weight: 700;
+        
+        margin-bottom: 1rem;
+    }
+
+    &--button,
+    &--button:link,
+    &--button:active,
+    &--button:visited {
+        border: 1px solid black;
+        padding: 0.5rem 2rem;
+        text-transform: uppercase;
+
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        
+        color: black;
+
+        position: absolute;
+        transform: translateY(165px);
+    }
+}

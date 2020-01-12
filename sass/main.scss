@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 14rem;
+}
+
+.container-text {
+    width: calc(100vw - 28rem);
+    padding: 4rem;
+    margin-left: 14rem;
+    margin-top: 3rem;
+    box-shadow: 0 0 32px rgba(128, 128, 128, 0.199);
+}
+
+.margin-top {
+    margin-top: 16.6rem;
+}
+
+@import 'components/navbar';
+@import 'components/news';
+@import 'components/latestDeals';
+@import 'components/footer';
+@import 'components/pages/about';
+@import 'components/pages/contact';
+@import 'components/carsItem';

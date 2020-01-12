@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
-}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+html {
+  font-size: 62.5%; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+body {
+  box-sizing: border-box; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  margin: 0 14rem; }
+
+.container-text {
+  width: calc(100vw - 28rem);
+  padding: 4rem;
+  margin-left: 14rem;
+  margin-top: 3rem;
+  box-shadow: 0 0 32px rgba(128, 128, 128, 0.199); }
+
+.margin-top {
+  margin-top: 16.6rem; }
+
+.navbar {
+  background-image: linear-gradient(to right, #FFBC57, #E3D264);
+  padding: 4.5rem 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between; }
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100vw - 28rem); }
+  .navbar-logo {
+    border: 1px solid;
+    padding: 0.3rem; }
+    .navbar-logo-title, .navbar-logo-title:link, .navbar-logo-title:visited, .navbar-logo-title:active {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2.7rem;
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase; }
+  .navbar-items--specific {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    text-decoration: none; }
+    .navbar-items--specific:not(:last-child) {
+      margin-right: 6.1rem; }
+
+.news-container {
+  width: calc(100vw - 14rem);
+  display: flex; }
+
+.news-image {
+  width: 90.3rem;
+  height: 59.8rem;
+  background-image: url("img/merc-c63.png");
+  margin-right: 6.5rem; }
+
+.news-info {
+  font-family: 'Roboto', sans-serif; }
+  .news-info--title {
+    font-weight: 700;
+    font-size: 3.3rem;
+    margin-bottom: 3.6rem; }
+  .news-info--text {
+    max-width: 69rem;
+    font-size: 1.6rem;
+    margin-bottom: 3rem; }
+  .news-info--data {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem; }
+  .news-info--button, .news-info--button:link, .news-info--button:active, .news-info--button:visited {
+    border: 1px solid black;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    transform: translateY(165px); }
+
+.deals-title {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.3rem;
+  font-weight: 700; }
+
+.footer {
+  background-color: #39363B;
+  font-family: 'Roboto', sans-serif;
   color: white;
-}
+  height: 60rem; }
+  .footer-container {
+    display: flex;
+    justify-content: space-between; }
+  .footer-title {
+    font-size: 3rem !important;
+    margin: 5rem 0; }
+  .footer-links--item {
+    display: block;
+    font-size: 1.6rem;
+    color: #E2930C;
+    text-decoration: none; }
+    .footer-links--item:not(:last-child) {
+      margin-bottom: 2rem; }
+  .footer-social--text {
+    font-size: 1.6rem; }
+  .footer-social--images {
+    margin-top: 3rem;
+    margin-right: 2rem; }
+  .footer-social--email {
+    margin-top: 3rem;
+    height: 4rem;
+    background-color: transparent;
+    padding: 2rem 2rem 2rem 5rem;
+    border: 1px solid white;
+    background-image: url("img/email.png");
+    background-repeat: no-repeat;
+    background-position: 5% 50%; }
+  .footer-social--emailUs, .footer-social--emailUs:link, .footer-social--emailUs:active, .footer-social--emailUs:visited {
+    border: 1px solid #E2930C;
+    padding: 0.5rem 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #E2930C;
+    position: absolute; }
+  .footer-credits {
+    height: 23rem;
+    background-color: #303030;
+    margin-top: 20rem; }
+    .footer-credits .credits {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2rem;
+      display: inline-block;
+      position: relative;
+      top: 11.7rem;
+      left: calc((100vw / 2) - 20rem); }
 
-.App-link {
-  color: #61dafb;
-}
+.about-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-align: center; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.about-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  text-align: justify; }
+
+.contact {
+  display: flex;
+  justify-content: space-between; }
+  .contact-text {
+    width: 70rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem; }
+  .contact-form--item {
+    display: block;
+    margin-bottom: 1.8rem;
+    height: 4rem;
+    width: 60rem;
+    padding-left: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; }
+  .contact-form--message {
+    display: block;
+    margin-bottom: 1.8rem;
+    height: 28rem;
+    width: 60rem;
+    padding-left: 2rem;
+    resize: both;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding: 2rem; }
+
+.carsItem {
+  border: 1px solid black;
+  height: 24.5rem;
+  width: calc(100vw - 28rem);
+  display: flex;
+  margin-bottom: 2rem; }
+  .carsItem-image {
+    background-image: url("img/porsche.png");
+    width: 43.5rem; }
+  .carsItem-data1 {
+    margin-left: 2rem; }
+    .carsItem-data1--title {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-top: 1rem;
+      margin-bottom: 3rem; }
+    .carsItem-data1--text {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 1rem; }
+  .carsItem-data2 {
+    margin-left: 12rem;
+    margin-top: 6rem; }
+  .carsItem-price {
+    margin-left: 15rem; }
+    .carsItem-price--brut {
+      font-family: 'Roboto', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-top: 16rem; }
+    .carsItem-price--net {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2rem; }
